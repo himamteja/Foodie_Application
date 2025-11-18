@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/* ==== Page Base ==== */
+ /* 🌟 Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("Image/Applicationlogo.png") center/cover no-repeat;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* 🧾 Checkout Container */
+.checkout-container {
+  
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 550px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🧾 Page Title */
+h1 {
+  text-align: center;
+  color: #f47c20;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+/* 📦 Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f47c20;
+  color: white;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+  transition: 0.3s ease;
+}
+
+/* 💰 Grand Total */
+.grand-total {
+  text-align: right;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* 🏠 Address + Payment Section */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  color: #444;
+}
+
+textarea {
+  width: 100%;
+  min-height: 90px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #f47c20;
+  outline: none;
+  box-shadow: 0 0 4px rgba(244, 124, 32, 0.5);
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+select:focus {
+  border-color: #f47c20;
+  outline: none;
+  box-shadow: 0 0 4px rgba(244, 124, 32, 0.5);
+}
+
+/* 🧾 Submit Button */
+input[type="submit"] {
+  background-color: #f47c20;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #d96412;
+  transform: scale(1.03);
+}
+
+/* 🧍‍♂️ Empty Cart Styling */
+p {
+  font-size: 16px;
+}
+
+a {
+  color: #f47c20;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  table th,
+  table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  input[type="submit"] {
+    font-size: 15px;
+  }
+}
+ 

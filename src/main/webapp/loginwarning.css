@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("Image/Applicationlogo.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.warning-container {
+  text-align: center;
+  background: white;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.warning-container:hover {
+	transform: scale(1.02)
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+.warning-container h1 {
+  color: #f47c20;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.warning-container p {
+  color: #333;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.buttons {
+  margin: 25px 0;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background: #0077ff;
+  color: white;
+}
+
+.login-btn:hover {
+  background: #005ecc;
+}
+
+.register-btn {
+  background: #f47c20;
+  color: white;
+}
+
+.register-btn:hover {
+  background: #d86b1d;
+}
+
+.note {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}

@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* General Page Setup */
+/* 🌟 Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("Image/Applicationlogo.png") center/cover no-repeat;
+  background-blend-mode: soft-light;
+}
+
+/* 🌈 Registration Form */
+form {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 450px;
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* 🏷️ Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #ff6600;
+  font-weight: 700;
+}
+
+/* ✏️ Labels */
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #333;
+}
+
+/* 🧾 Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="address"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #f47c20;
+  box-shadow: 0 0 6px rgba(244, 124, 32, 0.4);
+}
+
+/* 🚀 Submit Button */
+input[type="submit"] {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #f47c20;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #d9680f;
+  transform: scale(1.03);
+}
+
+/* ✨ Responsive */
+@media (max-width: 600px) {
+  form {
+    padding: 30px 25px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+}

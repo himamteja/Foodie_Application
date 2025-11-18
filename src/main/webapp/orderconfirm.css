@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/* 🌈 Page Setup */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url("Image/Applicationlogo.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* 📦 Main Container */
+.order-confirm-container {
+  backdrop-filter: blur(3px);
+  border-radius: 25px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 480px;
+  padding: 35px 30px;
+  animation: fadeIn 1.2s ease-in-out;
+  position: relative;
+}
+
+/* ✨ Fade In Effect */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 📸 Image / Video Styling */
+.order-confirm-container img,
+.order-confirm-container video {
+  width: 240px;
+  border-radius: 15px;
+  animation: floatIn 1s ease-in-out;
+}
+
+@keyframes floatIn {
+  0% { opacity: 0; transform: scale(0.9) translateY(30px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* 🧡 Thank You */
+h1 {
+  color: #ff6f00;
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  animation: textSlide 1s ease-in-out;
+}
+
+@keyframes textSlide {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🧾 Order Summary Box */
+.order-summary {
+  background: #fff9ec;
+  border: 2px solid #ffd699;
+  border-radius: 15px;
+  padding: 18px 20px;
+  text-align: left;
+  margin: 15px 0;
+  box-shadow: inset 0 0 10px rgba(255, 193, 7, 0.1);
+}
+
+.order-summary p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* ⏰ ETA */
+.eta {
+  font-weight: 600;
+  color: #4caf50;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* 🍔 Ordered Items Table */
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.items-table th {
+  background: #2196f3;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.items-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.items-table tr:hover {
+  background: #f1faff;
+  transition: 0.3s ease;
+}
+
+/* 🔘 Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.buttons a,
+.buttons button {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 25px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.home-btn {
+  background: #000;
+}
+
+.home-btn:hover {
+  background: #424242;
+  transform: translateY(-2px);
+}
+
+.order-btn {
+  background: #ff6f00;
+}
+
+.order-btn:hover {
+  background: #ff9800;
+  transform: translateY(-2px);
+}
+
+/* ✨ Hover Glow */
+.order-summary:hover {
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.3);
+}
+
+/* 📱 Responsive */
+@media (max-width: 500px) {
+  .order-confirm-container {
+    width: 90%;
+    padding: 25px;
+  }
+  h1 { font-size: 22px; }
+  .order-summary p { font-size: 14px; }
+}
+
+/* 🚴‍♂️ FULLSCREEN LOADING ANIMATION */
+#loading-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#loading-animation img {
+  width: 350px;
+  max-width: 90%;
+  animation: scootyDrive 1.3s linear infinite;
+}
+
+/* Scooty moves left → right */
+@keyframes scootyDrive {
+  0% { transform: translateX(-200px); }
+  100% { transform: translateX(200px); }
+}

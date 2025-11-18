@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Restaurant Home Page</title>
+
+<style>
+/* General Page Styling */
+body {
+	font-family: "Poppins", sans-serif;
+	background: linear-gradient(135deg, #ffecd2, #fcb69f);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+/* Form Container */
+form {
+	background: #ffffffcc;
+	padding: 40px 50px;
+	border-radius: 20px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+form:hover {
+	transform: translateY(-5px);
+}
+
+/* Heading */
+h1 {
+	color: #ff6600;
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styling */
+table {
+	margin: 0 auto;
+}
+
+/* Button Styling */
+button {
+	background: #ff6600;
+	border: none;
+	border-radius: 10px;
+	padding: 12px 25px;
+	margin: 10px;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);
+}
+
+button:hover {
+	background: #e65c00;
+	box-shadow: 0 6px 15px rgba(255, 102, 0, 0.5);
+	transform: scale(1.05);
+}
+
+/* Link Styling inside Button */
+button a {
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+
+/* Pseudo Class Effect for Links */
+button a:hover {
+	text-decoration: underline;
+}
+
+/* Responsive Adjustment */
+@media ( max-width : 600px) {
+	form {
+		width: 90%;
+		padding: 25px;
+	}
+	h1 {
+		font-size: 22px;
+	}
+	button {
+		width: 100%;
+		padding: 10px;
+	}
+}
+</style>
+</head>
+<body>
+	<form action="">
+		<h1>Welcome to Njoy_the_Food</h1>
+		<table>
+			<tr>
+				<td>
+					<button>
+						<a href="userloginpage.jsp">User Login</a>
+					</button>
+				</td>
+				<td>
+					<button>
+						<a href="adminloginpage.html">Admin Login</a>
+					</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
