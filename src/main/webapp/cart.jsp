@@ -84,7 +84,7 @@
             <div class="left-content">
 
                 <div class="section-card">
-                    <h3>Account</h3>
+                    <h3>Info/Suggestion...</h3>
                     <p>To place your order, click the <q>Help</q> 
                     button if you have any doubts. 
 					If you're facing any issues, use the <q>Suggestion</q> 

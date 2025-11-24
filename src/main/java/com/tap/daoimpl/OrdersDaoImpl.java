@@ -120,9 +120,10 @@ public class OrdersDaoImpl implements OrdersDao {
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DELETE ORDERS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 	@Override
-	public void deleteOrders(int id) {
+	public boolean deleteOrders(int id) {
 		
-		Orders orders = getOrders(id);
+//		Orders orders = getOrders(id);
+		boolean isDeleted = false;
 
 		try (Connection connection = DBConnection.getConnection();
 				PreparedStatement statement = connection.prepareStatement(DELETE_QUERY);) {
@@ -130,13 +131,14 @@ public class OrdersDaoImpl implements OrdersDao {
 			statement.setInt(1, id);
 
 			int res = statement.executeUpdate();
-			System.out.println(res);
+//			System.out.println(res);
+			isDeleted = res>0;
 
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
-	}
+		return isDeleted;
+	} 
 
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GET ALL ORDERS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 

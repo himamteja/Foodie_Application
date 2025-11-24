@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Njoy_the_food Orders Section</title>
-<link rel="stylesheet" href="myorders.css">
+<link rel="stylesheet" href="myorders.css?v=<%= System.currentTimeMillis() %>">
 <link rel="icon" href="Image/Applicationlogo.png" type="image/png">
 </head>
 <body>
@@ -35,7 +35,7 @@
         if (order.getUserid() == user.getUserId()) {
           hasOrders = true;
     %>
-      <div class="order-card">
+      <div class="order-card" id="order-card-<%= order.getOrderid() %>">
         <h3>Order ID: <%= order.getOrderid() %></h3>
         <p><strong>Restaurant ID:</strong> <%= order.getRestaurantid() %></p>
         <p><strong>Amount:</strong> ₹<%= order.getTotalamount() %></p>
@@ -43,10 +43,17 @@
         <p><strong>Payment Mode:</strong> <%= order.getPaymentmode() %></p>
         <p><strong>Order Date:</strong> <%= order.getOrderdate() %></p>
 
-        <form action="reorder" method="post">
+        <form action="checkout.jsp" method="post">
           <input type="hidden" name="orderid" value="<%= order.getOrderid() %>">
           <button type="submit" class="reorder-btn">🔁 Order Again</button>
         </form>
+        
+        <button type="button"
+        		class="delete-btn"
+        		onclick="deleteOrder(<%= order.getOrderid() %>)">
+    			🗑️ Delete
+		</button>
+        
       </div>
     <%
         }
@@ -62,6 +69,66 @@
     %>
   </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+function deleteOrder(orderId) {
+
+    // Step 1: Show Confirmation Popup
+    Swal.fire({
+        title: "Are you sure?",
+        text: "This order will be permanently deleted.",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, delete it!",
+        cancelButtonText: "Cancel",
+        confirmButtonColor: "#d33",
+        cancelButtonColor: "#3085d6"
+    }).then((result) => {
+
+        // If user clicked YES
+        if (result.isConfirmed) {
+
+            // Step 2: Make AJAX Call to DeleteOrderServlet
+            $.ajax({
+                url: "DeleteOrdersServlet",
+                type: "POST",
+                data: { orderid: orderId },
+
+                success: function() {
+                    // Step 3: Success Toast Message
+                    Swal.fire({
+                        toast: true,
+                        position: "bottom-end",
+                        icon: "success",
+                        title: "Order Deleted Successfully!",
+                        timer: 2000,
+                        showConfirmButton: false
+                    });
+
+                    // Step 4: Fade Out Deleted Card
+                    $("#order-card-" + orderId).fadeOut(500, function(){
+                        $(this).remove();
+                    });
+                },
+
+                error: function() {
+                    Swal.fire({
+                        toast: true,
+                        position: "bottom-end",
+                        icon: "error",
+                        title: "Failed to delete order!",
+                        timer: 2000,
+                        showConfirmButton: false
+                    });
+                }
+            });
+        }
+    });
+}
+</script>
 
 </body>
 </html>

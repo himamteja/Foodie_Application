@@ -26,9 +26,8 @@ body {
   width: 100%;
   max-width: 1200px;
   gap: 40px;
-  animation: fadeIn 0.6s ease-in-out;
 
-  backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(3.5px);
   padding: 25px;
   border-radius: 25px;
   box-shadow: 0 4px 22px rgba(0, 0, 0, 0.18);
@@ -313,14 +312,6 @@ body {
 .btn-empty-card:hover {
   background: #e14910;
   transform: translateY(-2px);
-}
-
-/* ===========================
-   ANIMATIONS
-=========================== */
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(40px); }
-  100% { opacity: 1; transform: translateY(0); }
 }
 
 /* ===========================

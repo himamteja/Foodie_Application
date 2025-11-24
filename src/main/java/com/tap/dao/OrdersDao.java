@@ -9,7 +9,7 @@ public interface OrdersDao {
 	int addOrders(Orders orders);
 	Orders getOrders(int id);
 	void updateOrders(Orders orders);
-	void deleteOrders(int id);
+	boolean deleteOrders(int id);
 	List<Orders> getAllOrders();
 	
 }
