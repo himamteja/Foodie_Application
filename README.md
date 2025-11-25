@@ -1,133 +1,243 @@
-<!-- Banner -->
 <p align="center">
-  <img src="project-banner.png" width="100%" />
+  <img src="Applicationlogo.png" width="350px" alt="Njoy_the_food Logo">
 </p>
 
 <h1 align="center">🍽️ Njoy_the_food – Online Food Delivery Web Application</h1>
 
 <p align="center">
-  <strong>A complete Java-based food ordering system with cart, orders, chatbot, offers, and a smooth UI.</strong>
+  A full-stack Java web application for seamless food ordering, real-time cart updates, order tracking, and chatbot assistance — built using JSP, Servlets & MySQL.
+</p>
+
+<p align="center">
+  <a href="#-project-overview">Overview</a> •
+  <a href="#-tech-stack--badges">Tech Stack</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-screenshots">Screenshots</a> •
+  <a href="#-getting-started">Getting Started</a> •
+  <a href="#-contributing">Contributing</a> •
+  <a href="#-license">License</a>
 </p>
 
 ---
 
-## 🚀 Live Project Demo (GIF)
+## 🎥 Demo Preview (GIF)
+
 <p align="center">
-  <img src="project-demo-gif.gif" width="600px">
+  <img src="project-demo-gif.gif" width="450px" alt="Njoy_the_food Demo">
 </p>
 
 ---
 
-## 🛠️ Tech Stack Used
+## 🎥 Project Demo Video
+
+➡️ **Watch Full Video:👇**  
+[Click here to watch the demo](project-demo.mp4)
+
+---
+
+## 🛠 Tech Stack & Badges
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo JAVA&logoColor=white" />
-  <img src="https://img.shields.io/badge/JSP-000000?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Servlets-4285F4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/JDBC-003B57?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black" />
-  <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JSP-323330?style=for-the-badge&logo=java&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Servlets-4B8BBE?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/JDBC-003B57?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white"/>
 </p>
 
 ---
 
 ## 📌 Project Overview
 
-**Njoy_the_food** is a full-stack Java web application that delivers a complete online food ordering experience.
+**Njoy_the_food** is a full-stack Java web application that simulates a modern online food delivery platform.
 
-Users can browse restaurants, explore menus, add items to cart, place orders, track delivery, and interact with a built-in **AI-style chatbot assistant** — all through a modern, smooth, responsive UI.
+Users can:
 
-This project is built using **Java, JSP, Servlets, JDBC, MySQL, HTML, CSS, JavaScript**, and runs on **Apache Tomcat**.
+- Browse restaurants and food items  
+- Add items to cart with quantity updates  
+- View order summary and checkout  
+- Track order confirmations  
+- Access their order history  
+- Get help using a simple chatbot-style assistant 🤖  
 
----
-
-## 🖼️ Project Screenshots
-
----
-
-### 🏠 Home Page  
-<img src="home.png" width="300px">
-
----
-
-### 🍲 Food Menu / Popular Items  
-<img src="menu.png" width="300px">
-
----
-
-### 🛒 Cart Page  
-<img src="cart.png" width="300px">
-
----
-
-### 🤖 Chatbot Assistant  
-<img src="chatbot.png" width="300px">
-
----
-
-### 🔐 Login Page  
-<img src="login.png" width="300px">
-
----
-
-### 📝 Registration Page  
-<img src="register.png" width="300px">
-
----
-
-### 📦 My Orders Page  
-<img src="myorders.png" width="300px">
-
----
-
-### 💳 Checkout Page  
-<img src="checkout.png" width="300px">
-
----
-
-### ✅ Order Success Page  
-<img src="order-success.png" width="300px">
-
----
-
-### 🛵 Delivery Animation  
-<img src="delivery-animation.png" width="300px">
+Built with **JSP, Servlets, JDBC, and MySQL**, it focuses on **clean UI, responsiveness, and real-world flow** like popular apps (Swiggy / Zomato).
 
 ---
 
 ## ✨ Features
 
-✔ Clean & modern UI  
-✔ Home page with popular categories & restaurant listings  
-✔ Add to cart functionality  
-✔ Dynamic menu rendering  
-✔ Order summary + checkout  
-✔ Order confirmation screen  
-✔ My Orders with reorder option  
-✔ AI-style chatbot helper  
-✔ MySQL database integration  
-✔ Fully responsive pages  
+- 🏠 **Home page** with highlighted categories & offers  
+- 🍲 **Dynamic menu listing** from backend  
+- 🛒 **Add to cart**, update quantity, and remove items  
+- 📄 **Order summary & checkout flow**  
+- ✅ **Order confirmation** page with success message  
+- 📦 **My Orders** page to view past orders  
+- 🔐 **User authentication** – login & registration  
+- 🤖 **Chatbot-like helper** for guidance  
+- 🗄 **MySQL database** integration with JDBC  
+- 📱 **Responsive design** for desktop & mobile  
 
 ---
 
-## ▶️ How to Run This Project
+## 🖼 Screenshots
 
-1. Clone the repository  
-2. Import into **Eclipse → Dynamic Web Project**  
-3. Add libraries (JDBC + Servlet API)  
-4. Configure **Apache Tomcat**  
-5. Import SQL file into MySQL  
-6. Run the project on server  
-7. Visit:  http://localhost:8080/Food_Application/
+> All screenshots are resized to keep the README clean and neat.
 
+## 🖼 Screenshots
+
+### Row 1
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="home.png" width="250px"><br>
+      <b>🏠 Home Page</b>
+    </td>
+    <td align="center">
+      <img src="menu.png" width="250px"><br>
+      <b>🍽️ Menu</b>
+    </td>
+    <td align="center">
+      <img src="cart.png" width="250px"><br>
+      <b>🛒 Cart</b>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## ❤️ Thank You!
+### Row 2
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="chatbot.png" width="250px"><br>
+      <b>🤖 Chatbot</b>
+    </td>
+    <td align="center">
+      <img src="login.png" width="250px"><br>
+      <b>🔐 Login</b>
+    </td>
+    <td align="center">
+      <img src="register.png" width="250px"><br>
+      <b>📝 Registration</b>
+    </td>
+  </tr>
+</table>
 
-If you like this project, please ⭐ star the repo on GitHub!
+---
 
+### Row 3
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="myorders.png" width="250px"><br>
+      <b>📦 My Orders</b>
+    </td>
+    <td align="center">
+      <img src="checkout.png" width="250px"><br>
+      <b>💳 Checkout</b>
+    </td>
+    <td align="center">
+      <img src="order-success.png" width="250px"><br>
+      <b>🎉 Order Success</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+### Row 4
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="delivery-animation.png" width="250px"><br>
+      <b>🛵 Delivery Animation</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🚀 Getting Started (High Level)
+1️⃣ Clone the Repository
+git clone 👉 https://github.com/himamteja/Foodie_Application.git
+
+2️⃣ Import into Eclipse
+
+Open Eclipse IDE
+
+Go to: File → Import → Existing Projects into Workspace
+
+Select the cloned folder and finish
+
+3️⃣ Configure Apache Tomcat
+
+Add a new Apache Tomcat 9/10 server in Eclipse
+
+Right-click project → Properties → Targeted Runtimes → select Tomcat
+
+4️⃣ Setup MySQL Database
+
+Create a database (e.g. njoy_the_food or your DB name)
+
+Import your SQL schema/data if you have one
+
+Update DB credentials in your DB connection class, for example:
+
+## // Example
+String url = "jdbc:mysql://localhost:3306/your_db_name";
+String username = "root";
+String password = "your_password";
+
+5️⃣ Run the Application
+
+Right-click on the project → Run As → Run on Server
+
+Choose your Tomcat server
+
+---
+
+## Open browser and navigate to:👇
+
+http://localhost:8080/Food_Application/
+
+---
+
+##📜 License (MIT)
+---
+This project is licensed under the MIT License.
+
+Copyright (c) ©2025 Himamteja Peyyala
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+---
+
+👨‍💻 Author
+
+Himamteja Peyyala
+🔗 GitHub: https://github.com/himamteja
+
+---
+
+🌐 GitHub: @himamteja
+
+---
+
+⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
+It really motivates me to build and share more projects! 😊
