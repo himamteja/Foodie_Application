@@ -142,7 +142,7 @@ git clone https://github.com/himamteja/Foodie_Application
 Right-click project → **Run on Server**
 
 ### 6️⃣ Open in Browser  
-http://localhost:8080/Njoy_the_food/
+http://localhost:8080/Food_Application/
 
 
 ---
