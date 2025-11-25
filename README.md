@@ -2,6 +2,8 @@
 
 ## 🎥 Project Demo Video
 
+➡️ ![Project Demo GIF](project-demo-gif.gif)
+
 ➡️ [Click here to watch the demo video](project-demo.mp4)
 
 
