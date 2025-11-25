@@ -211,7 +211,7 @@ http://localhost:8080/Food_Application/
 ---
 This project is licensed under the MIT License.
 
-Copyright (c) ©2025 Himamteja Peyyala
+©2025 Himamteja Peyyala
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -226,18 +226,18 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Himamteja Peyyala
 🔗 GitHub: https://github.com/himamteja
 
 ---
 
-🌐 GitHub: @himamteja
+## 🌐 GitHub: @himamteja
 
 ---
 
-⭐ Support
+## ⭐ Support
 
 If you found this project useful, please consider giving it a ⭐ on GitHub.
 It really motivates me to build and share more projects! 😊
