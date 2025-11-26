@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Applicationlogo.png" width="350px" alt="Njoy_the_food Logo">
+  <img src="screenshots/Applicationlogo.png" width="350px" alt="Njoy_the_food Logo">
 </p>
 
 <h1 align="center">🍽️ Njoy_the_food – Online Food Delivery Web Application</h1>
@@ -23,7 +23,7 @@
 ## 🎥 Demo Preview (GIF)
 
 <p align="center">
-  <img src="project-demo-gif.gif" width="450px" alt="Njoy_the_food Demo">
+  <img src="screenshots/project-demo-gif.gif" width="450px" alt="Njoy_the_food Demo">
 </p>
 
 ---
@@ -31,7 +31,7 @@
 ## 🎥 Project Demo Video
 
 ➡️ **Watch Full Video:👇**  
-[Click here to watch the demo](project-demo.mp4)
+[Click here to watch the demo](screenshots/project-demo.mp4)
 
 ---
 
@@ -94,15 +94,15 @@ Built with **JSP, Servlets, JDBC, and MySQL**, it focuses on **clean UI, respons
 <table align="center">
   <tr>
     <td align="center">
-      <img src="home.png" width="250px"><br>
+      <img src="screenshots/home.png" width="250px"><br>
       <b>🏠 Home Page</b>
     </td>
     <td align="center">
-      <img src="menu.png" width="250px"><br>
+      <img src="screenshots/menu.png" width="250px"><br>
       <b>🍽️ Menu</b>
     </td>
     <td align="center">
-      <img src="cart.png" width="250px"><br>
+      <img src="screenshots/cart.png" width="250px"><br>
       <b>🛒 Cart</b>
     </td>
   </tr>
@@ -114,15 +114,15 @@ Built with **JSP, Servlets, JDBC, and MySQL**, it focuses on **clean UI, respons
 <table align="center">
   <tr>
     <td align="center">
-      <img src="chatbot.png" width="250px"><br>
+      <img src="screenshots/chatbot.png" width="250px"><br>
       <b>🤖 Chatbot</b>
     </td>
     <td align="center">
-      <img src="login.png" width="250px"><br>
+      <img src="screenshots/login.png" width="250px"><br>
       <b>🔐 Login</b>
     </td>
     <td align="center">
-      <img src="register.png" width="250px"><br>
+      <img src="screenshots/register.png" width="250px"><br>
       <b>📝 Registration</b>
     </td>
   </tr>
@@ -134,15 +134,15 @@ Built with **JSP, Servlets, JDBC, and MySQL**, it focuses on **clean UI, respons
 <table align="center">
   <tr>
     <td align="center">
-      <img src="myorders.png" width="250px"><br>
+      <img src="screenshots/myorders.png" width="250px"><br>
       <b>📦 My Orders</b>
     </td>
     <td align="center">
-      <img src="checkout.png" width="250px"><br>
+      <img src="screenshots/checkout.png" width="250px"><br>
       <b>💳 Checkout</b>
     </td>
     <td align="center">
-      <img src="order-success.png" width="250px"><br>
+      <img src="screenshots/order-success.png" width="250px"><br>
       <b>🎉 Order Success</b>
     </td>
   </tr>
@@ -154,7 +154,7 @@ Built with **JSP, Servlets, JDBC, and MySQL**, it focuses on **clean UI, respons
 <table align="center">
   <tr>
     <td align="center">
-      <img src="delivery-animation.png" width="250px"><br>
+      <img src="screenshots/delivery-animation.png" width="250px"><br>
       <b>🛵 Delivery Animation</b>
     </td>
   </tr>
